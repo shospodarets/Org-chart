@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<title>Org. Chart</title>
+	<link href="css/all.css" rel="stylesheet" type="text/css" media="all" />
+	<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.7.custom.css" rel="stylesheet" />
+	<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.7.custom.min.js"></script>
+	<script type="text/javascript" src="js/raphael-min.js"></script>
+	<script type="text/javascript" src="js/jquery.jeditable.js"></script>
+	<script type="text/javascript" src="js/json.js"></script>
+	<script type="text/javascript" src="js/jquery.loader.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="css/ie6.css" /><![endif]-->
+</head>
+<body>
+	<div id="choose-box">
+		<ul>
+			<li><button class="save">Save</button></li>
+			<li><button class="cancel">Cancel</button></li>
+			<li><button class="upload">Upload</button></li>
+		</ul>
+	</div>
+	<div id="elements-wrapper" class="none">
+		<a class="add" href="#"></a>
+		<a class="remove" href="#"></a>
+		<a class="options" href="#"></a>
+		<div class="popup rounded">
+			<form action="#">
+				<fieldset>
+					<!--
+					<div class="row">
+						<input value="activity_rounded" class="checkbox" type="checkbox" />						<em>Activity</em>
+					</div>
+					-->
+					<div class="row row-head">
+						<input value="head" class="checkbox" type="checkbox" />						<em class="label">Head</em>
+					</div>
+					<div class="row row-lead">
+						<input value="lead" class="checkbox" type="checkbox" />
+						<em class="label">Lead</em>
+					</div>
+					<div class="row row-qa">
+						<input value="qa" class="checkbox" type="checkbox" />						<em class="label">QA</em>
+					</div>
+					<div class="row row-student">
+						<input value="student" class="checkbox" type="checkbox" />						<em class="label">Student</em>
+					</div>
+					<div class="row row-probation">
+						<input value="probation" class="checkbox" type="checkbox" />						<em class="label">On probation</em>
+					</div>
+					<div class="row row-projects-products">
+						<input value="projects_products" name="ul" class="checkbox" type="checkbox" />						<em class="label">Projects/Products</em>
+					</div>
+					<div class="row row-bold">
+						<input value="head" name="li" alt="span" class="checkbox" type="checkbox" />
+						<em class="label">Bold</em>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div id="wrapper">
+		<div class="wrapper-inner">
+		</div>
+	</div>
+</body>
+</html>

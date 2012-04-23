@@ -1,0 +1,44 @@
+/* min-width */
+* html body{
+	width:expression(document.documentElement.clientWidth < 1250 ? "1250px" : "auto");
+}
+* html #wrapper{
+	width:expression(document.documentElement.clientWidth < 1080 ? "1080px" : "auto");
+}
+* html .wrapper-inner{
+	width:expression(document.documentElement.clientWidth < 100 ? "100px" : "auto");
+}
+/* min-height */
+* html #wrapper{ 
+	height: expression( this.scrollHeight < 100 ? "100px" : "auto" ); /* sets min-height for IE */
+}
+* html .wrapper-inner{ 
+	height: expression( this.scrollHeight < 100 ? "100px" : "auto" ); /* sets min-height for IE */
+}
+* html .org-chat ul{ 
+	height: expression( this.scrollHeight < 20 ? "20px" : "auto" ); /* sets min-height for IE */
+}
+/* png background fix */
+* html .add{
+	cursor:pointer;
+	background-image:url(../images/none.gif);
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/ico-add-small.png', sizingmethod='crop');
+}
+* html .remove{
+	cursor:pointer;
+	background-image:url(../images/none.gif);
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/ico-delete.png', sizingmethod='crop');
+}
+* html .options{
+	cursor:pointer;
+	background-image:url(../images/none.gif);
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/wrench.png', sizingmethod='crop');
+}
+* html span.qa{
+	background-image:url(../images/none.gif);
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/qa-16.png', sizingmethod='crop');
+}
+* html span.head{
+	background-image:url(../images/none.gif);
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/head-16.png', sizingmethod='crop');
+}
