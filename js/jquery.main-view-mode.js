@@ -8,7 +8,7 @@ $(document).ready(function(){
 function jsonToHtml(_url){
 	_fader.show();
 	$.ajax({
-		type: "POST",
+		type: "GET",
 		url: _url,
 		dataType: 'json',
 		success: function(data){

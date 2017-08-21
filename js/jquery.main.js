@@ -1,7 +1,9 @@
 $(document).ready(function(){
 	_pageWrapper = $('#wrapper'); // global var
 	jsonToHtml('inc/orgchart.json');
-	setTimeout(function(){		initPage();	}, 3000);
+	setTimeout(function(){
+		initPage();
+	}, 3000);
 	
 });
 
@@ -108,7 +110,7 @@ function htmlToJson(){
 function jsonToHtml(_url){
 	_fader.show();
 	$.ajax({
-		type: "POST",
+		type: "GET",
 		url: _url,
 		dataType: 'json',
 		success: function(data){
